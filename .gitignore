@@ -1,0 +1,47 @@
+# Track source code and repository documentation only.
+# The allowlist also excludes unknown datasets, weights and experiment files.
+*
+!/.gitignore
+!/README.md
+!/requirements*.txt
+!/environment*.yml
+!/environment*.yaml
+!/pyproject.toml
+!/*.py
+!/model/
+!/model/*.py
+!/utils/
+!/utils/*.py
+!/tests/
+!/tests/*.py
+!/ablation/
+!/ablation/**/
+!/ablation/**/*.py
+
+# Generated files and local resources always remain private to the checkout.
+__pycache__/
+*.py[cod]
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.npz
+*.npy
+/data/
+/datasets/
+/ckpt/
+/outputs/
+/results/
+/tests/artifacts/
+/tests/diagnosis*/
+/tests/pipeline_*/
+/tests/tmp*/
+/tests/temp*/
+/.idea/
+/.vscode/
+/.venv/
+/venv/
+.DS_Store
+.env
+.env.*

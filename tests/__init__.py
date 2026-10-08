@@ -1,0 +1,7 @@
+"""Test helpers import this checkout, independent of its directory name."""
+from pathlib import Path
+import sys
+
+ROOT = str(Path(__file__).resolve().parents[1])
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
